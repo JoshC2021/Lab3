@@ -11,14 +11,16 @@ namespace DecisionMaking
             string userName = Console.ReadLine();
             while (isRunning)
             {
-               
+               // prompt user for input
                 Console.WriteLine("Enter a number 1 and 100 ");
                 int userNum;
+                // get valid input and int through range 1-100
                 while (!int.TryParse(Console.ReadLine(), out userNum) || userNum < 1 || userNum > 100)
                 {
                     Console.WriteLine("Sorry {0}, but your input is invalid, please try again",userName);
                 }
 
+                // print message depending on given number
                 if (userNum%2 == 0)
                 {
                     if (userNum > 60)
@@ -35,7 +37,7 @@ namespace DecisionMaking
                 }
 
 
-
+                // see if the user wants to run again
                 isRunning = GoAgain(userName);
             }
         }

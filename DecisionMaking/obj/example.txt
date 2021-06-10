@@ -1,8 +1,0 @@
-Student example: 
-
-Student class with the following properties and methods :
-string FirstName
-string LastName
-double Score
-
-
